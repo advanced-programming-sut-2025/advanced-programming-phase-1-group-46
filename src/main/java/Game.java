@@ -4,6 +4,7 @@ public class Game {
         game.start();
     }
     public void start() {
-        System.out.println("Game Started");
+        System.out.println("Game Started.");
     }
 }
+
