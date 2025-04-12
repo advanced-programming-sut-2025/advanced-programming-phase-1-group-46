@@ -3,6 +3,7 @@ package models;
 import models.enums.Farm;
 import models.enums.Inventory;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -26,6 +27,8 @@ public class User {
     private int tavanaiiMine;
     private int tavanaiiNature;
     private int tavanaiiFishing;
+    private ArrayList<Recipe> recipes;
+    private HashMap<Animal,Integer> animalFriendships;
 
 
 }
