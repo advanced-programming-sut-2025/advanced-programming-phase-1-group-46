@@ -1,10 +1,10 @@
-package Model.Enums;
+package models.enums;
 
-import Model.Building;
-import Model.Buildings.Greenhouse;
-import Model.Buildings.Home;
-import Model.Buildings.Lake;
-import Model.Buildings.Quarry;
+import models.Building;
+import models.buildings.Greenhouse;
+import models.buildings.Home;
+import models.buildings.Lake;
+import models.buildings.Quarry;
 
 import java.util.ArrayList;
 

@@ -1,0 +1,105 @@
+package models.enums;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public enum GameMenuCommands implements Command {
+    EnterMenu(""),
+    ExitMenu(""),
+    ShowCurrentMenu(""),
+    NewGame(""),
+    LoadGame(""),
+    ExitGame(""),
+    DeleteGame(""),
+    NextTurn(""),
+    ShowTime(""),
+    ShowDate(""),
+    ShowDateTime(""),
+    ShowDayOfTheWeek(""),
+    CheatAdvanceTime(""),
+    CheatAdvanceDate(""),
+    ShowSeason(""),
+    CheatThor(""),
+    ShowWeather(""),
+    ForecastWeather(""),
+    CheatWeatherSet(""),
+    BuildGreenhouse(""),
+    Walk(""),
+    PrintMap(""),
+    HelpReadingMap(""),
+    ShowEnergy(""),
+    CheatSetEnergy(""),
+    CheatUnlimitedEnergy(""),
+    ShowInventory(""),
+    DeleteFromInventory(""),
+    EquipTool(""),
+    ShowCurrentTool(""),
+    ShowAvailableTool(""),
+    UpgradeTool(""),
+    UseTool(""),
+    ShowCraftInfo(""),
+    Plant(""),
+    ShowPlantInfo(""),
+    Fertilize(""),
+    HowMuchWaterInBucket(""),
+    ShowCraftingRecipes(""),
+    CraftItem(""),
+    PlaceItemOnGround(""),
+    CheatAddItem(""),
+    PutIntoRefrigerator(""),
+    PickFromRefrigerator(""),
+    ShowCookingRecipes(""),
+    PrepareFoodRecipe(""),
+    EatFood(""),
+    BuildBuilding(""),
+    BuyAnimal(""),
+    PetAnimal(""),
+    CheatSetAnimalFriendshipLevel(""),
+    ShowAllAnimals(""),
+    ShepherdAnimal(""),
+    FeedAnimal(""),
+    ShowRemainingAnimalProducts(""),
+    CollectAnimalProducts(""),
+    SellAnimal(""),
+    StartFishing(""),
+    UseArtisan(""),
+    GetFromArtisan(""),
+    ShowAllProducts(""),
+    ShowAllAvailableProducts(""),
+    PurchaseProduct(""),
+    CheatAddMoney(""),
+    SellProduct(""),
+    ShowFriendshipLevels(""),
+    Talk(""),
+    ShowTalkHistory(""),
+    SendGift(""),
+    ShowReceivedGiftList(""),
+    RateGift(""),
+    ShowAllGiftsHistory(""),
+    Hug(""),
+    BuyFlower(""),
+    AskForMarriage(""),
+    RespondToMarriageRequest(""),
+    StartTrade(""),
+    Trade(""),
+    ShowTradesList(""),
+    RespondToTrade(""),
+    ShowTradeHistory(""),
+    MeetNPC(""),
+    GiveGiftToNPC(""),
+    ListNPCFriendshipLevels(""),
+    ShowQuestsList(""),
+    FindQuest("");
+
+
+    private final String regexPattern;
+
+    GameMenuCommands(String regexPattern) {this.regexPattern = regexPattern;}
+
+    @Override
+    public Matcher getMatcher(String command) {
+        Matcher matcher = Pattern.compile(regexPattern).matcher(command);
+        if (matcher.matches()) return matcher;
+        return null;
+    }
+}

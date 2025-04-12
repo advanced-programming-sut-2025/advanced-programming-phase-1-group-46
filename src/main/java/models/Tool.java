@@ -1,6 +1,6 @@
-package Model;
+package models;
 
-import Model.Enums.Ground;
+import models.enums.Ground;
 
 import java.util.Map;
 

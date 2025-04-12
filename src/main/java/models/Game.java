@@ -1,6 +1,6 @@
-package Model;
+package models;
 
-import Model.Enums.Weather;
+import models.enums.Weather;
 
 import java.util.ArrayList;
 

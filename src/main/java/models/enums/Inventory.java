@@ -1,8 +1,7 @@
-package Model.Enums;
+package models.enums;
 
-import Model.GameObject;
+import models.GameObject;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 
 public enum Inventory {

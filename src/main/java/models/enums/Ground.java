@@ -1,4 +1,4 @@
-package Model.Enums;
+package models.enums;
 
 public enum Ground {
 }

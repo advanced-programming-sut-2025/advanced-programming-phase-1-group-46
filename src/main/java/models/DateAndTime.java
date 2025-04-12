@@ -1,6 +1,6 @@
-package Model;
+package models;
 
-import Model.Enums.Season;
+import models.enums.Season;
 
 public class DateAndTime {
     private Season currentSeason;

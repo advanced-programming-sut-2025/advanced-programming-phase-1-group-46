@@ -1,6 +1,6 @@
-package Model.Buildings;
+package models.buildings;
 
-import Model.Building;
+import models.Building;
 
 public class Greenhouse implements Building {
     private boolean isFixed;

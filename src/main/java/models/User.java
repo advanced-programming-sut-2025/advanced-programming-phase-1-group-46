@@ -1,7 +1,7 @@
-package Model;
+package models;
 
-import Model.Enums.Farm;
-import Model.Enums.Inventory;
+import models.enums.Farm;
+import models.enums.Inventory;
 
 import java.util.HashMap;
 import java.util.Map;
