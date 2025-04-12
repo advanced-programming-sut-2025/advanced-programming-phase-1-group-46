@@ -5,17 +5,21 @@ import views.*;
 
 import java.util.Scanner;
 
-
 public enum Menu {
-    RegisterMenu(new RegisterMenu()),
-    LoginMenu(new LoginMenu()),
-    MainMenu(new MainMenu()),
-    GameMenu(new GameMenu()),
-    ProfileMenu(new ProfileMenu()),
-    ExitMenu(new ExitMenu());
+    REGISTER_MENU(new RegisterMenu()),
+    LOGIN_MENU(new LoginMenu()),
+    MAIN_MENU(new MainMenu()),
+    GAME_MENU(new GameMenu()),
+    PROFILE_MENU(new ProfileMenu()),
+    EXIT_MENU(new ExitMenu());
+
     private final AppMenu menu;
 
-    Menu(final AppMenu menu) {this.menu = menu;}
+    Menu(final AppMenu menu) {
+        this.menu = menu;
+    }
 
-    public Result checkCommand(Scanner scanner) {return this.menu.check(scanner);}
+    public Result checkCommand(Scanner scanner) {
+        return this.menu.check(scanner);
+    }
 }

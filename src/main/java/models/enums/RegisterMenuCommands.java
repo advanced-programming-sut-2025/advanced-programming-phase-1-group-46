@@ -4,10 +4,10 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public enum RegisterMenuCommands implements Command {
-    EnterMenu(""),
-    ExitMenu(""),
-    ShowCurrentMenu(""),
-    Register("");
+    ENTER_MENU(""),
+    EXIT_MENU(""),
+    SHOW_CURRENT_MENU(""),
+    REGISTER("");
     private final String regexPattern;
 
     RegisterMenuCommands(String regexPattern) {this.regexPattern = regexPattern;}
