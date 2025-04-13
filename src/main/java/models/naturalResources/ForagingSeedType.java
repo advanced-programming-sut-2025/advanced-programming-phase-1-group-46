@@ -2,7 +2,7 @@ package models.naturalResources;
 
 import models.enums.Season;
 
-public enum ForagingSeed implements ForagingPlants, Seed {
+public enum ForagingSeedType{
     JAZZ_SEEDS(Season.SPRING),
     CARROT_SEEDS(Season.SPRING),
     CAULIFLOWER_SEEDS(Season.SPRING),
@@ -52,7 +52,7 @@ public enum ForagingSeed implements ForagingPlants, Seed {
 
     private final Season season;
 
-    ForagingSeed(Season season) {
+    ForagingSeedType(Season season) {
         this.season = season;
     }
 

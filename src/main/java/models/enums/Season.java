@@ -1,11 +1,9 @@
 package models.enums;
 
 public enum Season {
-    SPRING,
     SPECIAL,
+    SPRING,
     SUMMER,
     WINTER,
-    AUTUMN,
-    FALL;
-
+    FALL
 }

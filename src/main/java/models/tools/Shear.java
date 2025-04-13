@@ -2,7 +2,7 @@ package models.tools;
 
 import models.Result;
 
-public class Shear implements Tool {
+public class Shear extends Tool {
     @Override
     public Result use(int direction) {
         return null;

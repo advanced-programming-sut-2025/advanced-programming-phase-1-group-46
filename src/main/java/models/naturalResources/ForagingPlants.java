@@ -1,6 +1,7 @@
 package models.naturalResources;
 
 import models.GameObject;
+import models.Updatable;
 
-public interface ForagingPlants implements GameObject{
+public abstract class ForagingPlants extends GameObject implements Updatable {
 }

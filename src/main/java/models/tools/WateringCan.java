@@ -2,7 +2,7 @@ package models.tools;
 
 import models.Result;
 
-public class WateringCan implements Tool {
+public class WateringCan extends Tool {
     @Override
     public Result use(int direction) {
         return null;

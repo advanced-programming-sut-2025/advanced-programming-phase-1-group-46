@@ -8,5 +8,5 @@ public enum AnimalsType {
     COW,
     GOAT,
     SHEEP,
-    PIG;
+    PIG
 }

@@ -2,7 +2,7 @@ package models.tools;
 
 import models.Result;
 
-public class FishingPole implements Tool {
+public class FishingPole extends Tool {
     @Override
     public Result use(int direction) {
         return null;

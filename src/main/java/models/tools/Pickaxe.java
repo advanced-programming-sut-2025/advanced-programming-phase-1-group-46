@@ -2,7 +2,7 @@ package models.tools;
 
 import models.Result;
 
-public class Pickaxe implements Tool {
+public class Pickaxe extends Tool {
     @Override
     public Result use(int direction) {
         return null;

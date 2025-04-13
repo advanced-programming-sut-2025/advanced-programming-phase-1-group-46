@@ -2,7 +2,7 @@ package models.tools;
 
 import models.Result;
 
-public class MilkPail implements Tool {
+public class MilkPail extends Tool {
     @Override
     public Result use(int direction) {
         return null;

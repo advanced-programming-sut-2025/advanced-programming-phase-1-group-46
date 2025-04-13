@@ -2,7 +2,7 @@ package models.naturalResources;
 
 import models.enums.Season;
 
-public enum ForagingTrees implements ForagingPlants {
+public enum ForagingTrees {
     ACORNS(Season.SPECIAL),
     MAPLE_SEEDS(Season.SPECIAL),
     PINE_CONES(Season.SPECIAL),

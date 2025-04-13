@@ -2,7 +2,7 @@ package models.tools;
 
 import models.Result;
 
-public class Hoe implements Tool {
+public class Hoe extends Tool {
     @Override
     public Result use(int direction) {
         return null;

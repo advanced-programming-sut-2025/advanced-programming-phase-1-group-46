@@ -3,8 +3,9 @@ package models.tools;
 import models.GameObject;
 import models.Result;
 
-public interface Tool extends GameObject {
-    Result use(int direction);
-    Result upgrade();
-    Result getEnergy();
+public abstract class Tool extends GameObject {
+    private ToolLevel toolLevel;
+    abstract Result use(int direction);
+    abstract Result upgrade();
+    abstract Result getEnergy();
 }

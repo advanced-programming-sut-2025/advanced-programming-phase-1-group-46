@@ -2,7 +2,7 @@ package models.tools;
 
 import models.Result;
 
-public class TrashCan implements Tool {
+public class TrashCan extends Tool {
     @Override
     public Result use(int direction) {
         return null;

@@ -4,16 +4,15 @@ import models.GameObject;
 
 import java.util.HashMap;
 
-public enum Inventory {
+public enum InventoryType {
     NORMAL(12),
     BIG(24),
     DELUXE(100000000);
 
-    Inventory(int size) {
+    InventoryType(int size) {
         this.size = size;
     }
 
-    private int size;
-    private HashMap<GameObject,Integer> daraiy;
+    private final int size;
 
 }

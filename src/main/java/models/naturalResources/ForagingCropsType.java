@@ -2,7 +2,7 @@ package models.naturalResources;
 
 import models.enums.Season;
 
-public enum ForagingCrops implements ForagingPlants {
+public enum ForagingCropsType {
     COMMON_MUSHROOM(40, 38, Season.SPECIAL),
     DAFFODIL(30, 0, Season.SPRING),
     DANDELION(40, 25, Season.SPRING),
@@ -31,7 +31,7 @@ public enum ForagingCrops implements ForagingPlants {
     private final int energy;
     private final Season season;
 
-    ForagingCrops(int baseSellPrice, int energy, Season season) {
+    ForagingCropsType(int baseSellPrice, int energy, Season season) {
         this.baseSellPrice = baseSellPrice;
         this.energy = energy;
         this.season = season;
