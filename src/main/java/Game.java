@@ -1,9 +1,8 @@
+import views.AppView;
+
 public class Game {
     public static void main(String[] args) {
-        Game game = new Game();
-        game.start();
+        AppView.run();
     }
-    public void start() {
-        System.out.println("Game Started");
-    }
+
 }
