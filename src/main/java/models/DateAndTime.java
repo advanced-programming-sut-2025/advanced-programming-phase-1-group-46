@@ -15,6 +15,7 @@ public class DateAndTime {
         SATURDAY,
         SUNDAY
     }
+    public void nextHour(){};
     public void nextDay() {};
     public void nextMonth() {};
     public void nextSeason() {};
